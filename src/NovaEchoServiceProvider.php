@@ -1,6 +1,6 @@
 <?php
 
-namespace Coreproc\NovaEcho;
+namespace Ratno\NovaEcho;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
@@ -20,5 +20,9 @@ class NovaEchoServiceProvider extends ServiceProvider
         });
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'nova-echo');
+
+        $this->publishes([
+            __DIR__.'/../config/nova-echo.php' => config_path('nova-echo.php'),
+        ], 'config');
     }
 }

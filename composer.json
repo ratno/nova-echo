@@ -1,5 +1,5 @@
 {
-    "name": "coreproc/nova-echo",
+    "name": "ratno/nova-echo",
     "description": "Adds Laravel Echo with your broadcast configuration to your Laravel Nova app",
     "keywords": [
         "laravel",
@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Coreproc\\NovaEcho\\": "src/"
+            "Ratno\\NovaEcho\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Coreproc\\NovaEcho\\NovaEchoServiceProvider"
+                "Ratno\\NovaEcho\\NovaEchoServiceProvider"
             ]
         }
     },
